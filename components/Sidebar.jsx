@@ -91,21 +91,21 @@ const Sidebar = () => {
       <div className={styles.sidebarBottom}>
         <div className={styles.iconContainer}>
           <Link href="/about">
-            <>
+            <div>
               <AccountIcon
                 fill={
                   router.pathname === '/about' ? active : inactive
                 }
                 className={styles.icon}
               />
-            </>
+            </div>
           </Link>
         </div>
         <div className={styles.iconContainer}>
           <Link href="/settings">
-            <>
+            <div>
               <SettingsIcon fill={inactive} className={styles.icon} />
-            </>
+            </div>
           </Link>
         </div>
       </div>
