@@ -45,6 +45,20 @@ const Sidebar = () => {
             />
           </div>
         </Link>
+        <Link href="/contact">
+          <div
+            className={`${styles.iconContainer} ${
+              router.pathname === '/contact' && styles.active
+            }`}
+          >
+            <MailIcon
+              fill={
+                router.pathname === '/contact' ? active : inactive
+              }
+              className={styles.icon}
+            />
+          </div>
+        </Link>
         <Link href="/articles">
           <div
             className={`${styles.iconContainer} ${
@@ -68,20 +82,6 @@ const Sidebar = () => {
             <GithubIcon
               fill={
                 router.pathname === '/github' ? active : inactive
-              }
-              className={styles.icon}
-            />
-          </div>
-        </Link>
-        <Link href="/contact">
-          <div
-            className={`${styles.iconContainer} ${
-              router.pathname === '/contact' && styles.active
-            }`}
-          >
-            <MailIcon
-              fill={
-                router.pathname === '/contact' ? active : inactive
               }
               className={styles.icon}
             />

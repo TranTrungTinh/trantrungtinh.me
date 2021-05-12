@@ -12,7 +12,7 @@ const Bottombar = () => {
       <div className={styles.container}>
         <div className={styles.section}>
           <GitCompareIcon className={styles.icon} />
-          <p>main</p>
+          <p>master</p>
         </div>
         <div className={styles.section}>
           <ErrorIcon className={styles.icon} />

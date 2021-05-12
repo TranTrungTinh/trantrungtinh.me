@@ -43,12 +43,12 @@ const Explorer = () => {
           <Link href="/about">
             <div className={styles.file}>
               <Image
-                src="/html_icon.svg"
-                alt="HTML Icon"
+                src="/vue_icon.svg"
+                alt="Vue Icon"
                 height={18}
                 width={18}
               />{' '}
-              <p>about.html</p>
+              <p>about.vue</p>
             </div>
           </Link>
           <Link href="/contact">
