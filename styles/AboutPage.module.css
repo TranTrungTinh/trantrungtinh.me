@@ -1,0 +1,16 @@
+.page {
+  margin: auto;
+  background-color: #fcfcfc;
+  position: relative;
+  display: grid;
+  grid-template-columns: 33% auto;
+  width: 210mm;
+  min-height: 297mm;
+  max-height: 297mm;
+}
+
+.sidebar {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252/var(--tw-bg-opacity)) !important;
+  width: 100%;
+}

@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.85rem;
   border-bottom: 1px solid #191d20;
 }
@@ -22,7 +22,7 @@
   text-align: center;
 }
 
-.items > * {
+.items>* {
   padding: 0 0.5rem;
   cursor: pointer;
 }
@@ -59,6 +59,7 @@
   .items p {
     display: none;
   }
+
   .title {
     flex: 4;
   }

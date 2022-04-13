@@ -11,7 +11,7 @@ export default function HomePage() {
         <h1 className={styles.title}>Tinh Tran</h1>
         <h3 className={styles.subtitle}>&lt;!-- Web Developer --&gt;</h3>
         <div className={styles.buttons}>
-          <Link href="/about">
+          <Link href="/profile">
             <button className={styles.contained}>What Can I Do?</button>
           </Link>
           <Link href="/contact">

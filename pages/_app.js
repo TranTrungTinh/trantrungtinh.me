@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import '../styles/globals.css';
 import '../styles/themes.css';
 
+
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if (localStorage.getItem('theme')) {
@@ -13,11 +14,8 @@ function MyApp({ Component, pageProps }) {
     }
   }, []);
 
-  return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  );
+  const pageLayout = Component.layout || ((page) => <Layout>{page}</Layout>);
+  return pageLayout(<Component {...pageProps} />);
 }
 
 export default MyApp;

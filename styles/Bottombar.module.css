@@ -26,7 +26,7 @@
   align-items: center;
   padding: 0 0.2rem;
   cursor: pointer;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .section:hover {
@@ -37,6 +37,7 @@
   .bottomBar {
     font-size: 0.6rem;
   }
+
   .section {
     margin-right: 0.5rem;
   }
