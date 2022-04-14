@@ -1,12 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import puppeteer from "puppeteer";
 export default async (req, res) => {
-  const browser = await puppeteer.launch({
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    headless: true
-  })
+  const browser = await puppeteer.launch()
   const page = await browser.newPage()
-  await page.goto('http://localhost:8080/profile', { waitUntil: 'networkidle0' })
+  await page.goto('http://localhost:8080/profile', { waitUntil: 'networkidle2' })
   await page.evaluate(() => { window.scrollBy(0, window.innerHeight); })
   // Create PDF Buffer
   const buffer = await page.pdf({
