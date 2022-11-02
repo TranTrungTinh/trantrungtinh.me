@@ -4,7 +4,7 @@ const AboutPage = () => {
   return (
     <>
       <Head title="Tinh Tran | About" />
-      <a href="/api/pdf" download="generated_pdf.pdf" className="block text-right">Download PDF</a>
+      <a href="/api/pdf" download="cv-t.pdf" className="block text-right">Download PDF</a>
     </>
   );
 };
